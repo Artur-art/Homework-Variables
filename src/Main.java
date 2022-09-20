@@ -41,10 +41,10 @@ public class Main {
        System.out.println("перевес боксеров будет составлять " + overWeight2 + " кг");
        var workHours = 640;
        var workHoursForOneEmploer = 8;
-       var amountEmployersInCompany = 640 / 8;
+       var amountEmployersInCompany = workHours / workHoursForOneEmploer;
        System.out.println("Всего работников в компании –  " + amountEmployersInCompany + " человек");
        var newEmployers = amountEmployersInCompany + 94;
-       var newWorkHours = 8 * newEmployers;
+       var newWorkHours = workHoursForOneEmploer * newEmployers;
        System.out.println("Если в компании работает " + newEmployers + " человек, то всего " + newWorkHours + " часа работы может быть поделено между сотрудниками" );
 
 
